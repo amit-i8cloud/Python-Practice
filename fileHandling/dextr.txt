@@ -1,0 +1,64 @@
+Amanda runo Mars  Alex Bruno Mars  Alex Bruno Mars  Alex Bruno Mars
+
+
+employee , user and contract
+
+community edition
+-> open source
+-> no hosting
+-> no featire addon
+-> less features
+-> Then where we makes apps
+-> it has less apps
+-> not accounting , helpdeask,knowldege
+enterprise edition
+-> Looks better
+-> modern apps
+
+
+// Three subscriptions
+-> odoo online
+: SAAS Application (no need to where its stores ur data)
+: You can only use odoos standard featires no customization
+-> custom
+: Access to Enterprise edition code
+: customization
+: can deploy inpremise
+
+-> odoo.sh
+: deployment option
+: dev and deployment env
+
+
+res.partner
+Model -> where ur save ur data, all calculations
+View -> kanban , list ,form view
+
+contact (res.partner)
+-> can be anything (customer , vendor , employee , propspect)
+type of res.partner can be individeula / company
+user -> res.user
+employee -> hr.employee
+-> user and employee can relate and employee or user are related to the contact
+ERP software
+Pricing model
+
+zoho -> per module
+odoo -> per user
+setting -> developer detting
+backened -> where all apps are seen
+frontend -> Website view
+
+
+---
+user :
+ -> internal user -> users having backened access
+ -> portal -> frontend access
+ -> public
+ -> data backup odoo
+
+ owlframework -> backened
+ js in fronten
+
+ i_8 knowldege managemen
+ modeul , view controller
