@@ -41,34 +41,58 @@ Inheritance :
 Single Inheritance :: 
 -> One child class inherits from one parent class
 '''
-class i8Cloud:
-    def employee(self):
-        print("Employee from i8Cloud !!")
+# class i8Cloud:
+#     def employee(self):
+#         print("Employee from i8Cloud !!")
+#
+#
+# class Meta(i8Cloud):
+#
+#     # below is Overwriting the existing the parent child content
+#     # def employee(self):
+#     #     print("Employee from Facebook")
+#
+#     # below is the extending functionality of the Parent class
+#     # def employee(self):
+#     #     super().employee()
+#     #     print("Its a Good Employee !!")
+#
+#     def employee2(self):
+#        # super().employee()   # calling the function of the parent class using super
+#         self.employee()  # calling the function of the parent class
+#         print("Employee from Meta !!")
+#
+# obj = Meta()
+# # print(obj.employee())
+# print(obj.employee2())
 
-
-class Meta(i8Cloud):
-
-    # below is Overwriting the existing the parent child content
-    # def employee(self):
-    #     print("Employee from Facebook")
-
-    # below is the extending functionality of the Parent class
-    # def employee(self):
-    #     super().employee()
-    #     print("Its a Good Employee !!")
-
-    def employee2(self):
-       # super().employee()   # calling the function of the parent class using super
-        self.employee()  # calling the function of the parent class
-        print("Employee from Meta !!")
-
-obj = Meta()
-# print(obj.employee())
-print(obj.employee2())
 '''
 Multilevel Inheritance :: 
 -> In Multilevel Inheritance, a class inherits from a child class, which itself inherited from another class.
 '''
+class A:
+    def user1(self):
+        print("User from the Class-A")
+class B(A):
+    def user1(self):
+        super().user1()
+        print("User1 is from Brazil")
+    def user2(self):
+        print("User from the Class-B")
+
+class C(B):
+    def user1(self):
+        super().user1()
+        print("User1 is from -- South America --")
+    def user2(self):
+        self.user1()
+        super().user1()
+        print("User from the Class-C")
+
+obj = C()
+obj.user2()
+
+
 '''
 Hierarchical  Inheritance :: 
 -> In Hierarchical Inheritance, multiple child classes inherit from the same parent class.
