@@ -139,3 +139,40 @@ names = ['a', 'b']
 ages = [10, 20]
 print(list(zip(names, ages)))  # [('a', 10), ('b', 20)]
 
+# Set Methods & Techniques in Python
+
+# Create a set
+s = {1, 2, 3}
+
+# add(x) - Adds element x to the set
+s.add(4)  # Now s = {1, 2, 3, 4}
+print("After add:", s)
+
+# remove(x) - Removes x from the set; raises KeyError if not present
+s.remove(2)  # Now s = {1, 3, 4}
+print("After remove:", s)
+
+# discard(x) - Removes x if present; no error if not
+s.discard(10)  # Does nothing since 10 is not in the set
+print("After discard (10):", s)
+
+# pop() - Removes and returns an arbitrary element
+removed_element = s.pop()  # Removes some element
+print("After pop:", s, "(Removed element:", removed_element, ")")
+
+# clear() - Removes all elements from the set
+s.clear()
+print("After clear:", s)  # Output: set()
+
+# copy() - Returns a shallow copy of the set
+original = {5, 6, 7}
+copy_set = original.copy()
+print("Original set:", original)
+print("Copied set:", copy_set)
+
+# len(s) - Returns the number of elements in the set
+print("Length of original set:", len(original))
+
+# in / not in - Membership test
+print("Is 6 in original set?", 6 in original)
+print("Is 10 not in original set?", 10 not in original)
