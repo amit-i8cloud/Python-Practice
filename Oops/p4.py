@@ -97,26 +97,46 @@ Multilevel Inheritance ::
 Hierarchical  Inheritance :: 
 -> In Hierarchical Inheritance, multiple child classes inherit from the same parent class.
 '''
-class A:
-    def user1(self):
-        print("This is user from class-A")
-class B(A):
-    def user2(self):
-        print("This is user from class-B")
-class C(A):
-    def user1(self):
-      #  super().user1()
-        print("This is Halloweeen !!")
-    def user3(self):
-        print("This is user from class-C")
-
-obj = C()
-obj.user1()
-# obj.user2()
-obj.user3()
+# class A:
+#     def user1(self):
+#         print("This is user from class-A")
+# class B(A):
+#     def user2(self):
+#         print("This is user from class-B")
+# class C(A):
+#     def user1(self):
+#       #  super().user1()
+#         print("This is Halloweeen !!")
+#     def user3(self):
+#         print("This is user from class-C")
+#
+# obj = C()
+# obj.user1()
+# # obj.user2()
+# obj.user3()
 
 '''
 Multiple Inheritance :: 
 -> A single child class inherits from more than one parent class.
 '''
+class A:
+    def user1(self):
+        print("This is user from class-A")
+class B:
+    def user2(self):
+        print("This is user from class-B")
+class C(A,B):
+    def user1(self):
+        super().user1()
+        print("This is Halloweeen for user1 !!")
+    def user2(self):
+        super().user2()
+        print("This is HAppy ThanksGiving for user2 !!")
+    def user3(self):
+        self.user1()
+        self.user2()
+        print("This is user from class-C")
+
+obj = C()
+obj.user3()
 
