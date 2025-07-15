@@ -11,7 +11,6 @@
 #  -> Norway
 #  -> US
 # """
-from polib import text_type
 
 str = "HelloWorld"
 # print(s1)
@@ -53,12 +52,18 @@ Notes ::
 # print(str[-2]) # print the last second charcter
 
 #s Slicing
-text = "PythonisaGoodProgrammingLanguage"
-print(text[:2]) # from index o -> 1
-print(text[2:]) # from index 2 -> end
-print(text[-3:])  # last 3
+# text = "PythonisaGoodProgrammingLanguage"
+# print(text[:2]) # from index o -> 1
+# print(text[2:]) # from index 2 -> end
+# print(text[-3:])  # last 3
+#
+# print(text[0:20:2]) # from 0 -> 19 (sipping the 2nd charcter)
 
-print(text[0:20:2]) # from 0 -> 19 (sipping the 2nd charcter)
+# #reverse the string
+# print(text[::-1])  // start , end not specified , just print from back
 
-#reverse the string
-print(text[::-1])
+# st = "Python"  try to visulaize in the form of 0-> end and from back -1 to -(len(str))
+# print(st[:-1])
+
+# print(st[-2:-6:-1]) # ohty
+# \n , \t -> counts as single character
