@@ -32,8 +32,12 @@ x.say_Hello()
 # Calling Method
 # c1.show_Details()
 # c2.show_Details()
+arr = [11,2,3,4,5]
 
-
+for index,value in enumerate(arr):
+    print(index,value)
+arr.sort(reverse = True)
+print(arr)
 # Flow -> Defining a  Class -> Object Creation from the class -> calls __init__() -> self.arg1 and self.arg2 fills -> calls the method show details
 # Define class → Create object → __init__ runs → Object stores data → You call a method → Method uses object’s data → Outputs result
 # every Class which is created , has its own own object and self points to that particular object(Sometimes to fill that empty object ..)

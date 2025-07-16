@@ -34,7 +34,7 @@ Inheritance :
 #
 # obj = Child()
 # obj.method2()
-# obj.method1() # cant access as till now we had not inherited the parent class .
+# obj.method1() # can access as now we had not inherited the parent class .
 
 '''              Types of Inheritance        '''
 '''

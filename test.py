@@ -83,7 +83,10 @@ cars = ["Ford Mustang","Ferrari GT","BMW X-series","Bugatti Veyron"]
 #     print(key,value)
 
 # list: Odered,changeable and allow duplicates
-arr = [1,3,6,4,8,6,9];
-print(arr)
+# arr = [1,3,6,4,8,6,9];
+# print(arr)
+
+# odoo filed data types
+# secuirity grousp
 
 

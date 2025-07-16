@@ -15,7 +15,7 @@ b = Bank()
 
 # print(b.__balance) # raises an error as we are trying to access the private variable
 
-# using name mangling trick
+# using name mangling trick (objectName._classNameprivate)
 print("Bank_Balance : ",b._Bank__balance)
 '''
 # With getter and setter

@@ -36,7 +36,7 @@
 # returns the first occurance of the  substring in the string
 
  find() -> if substring not found , returns -1
- index() -> if string not found , returns teh valueEroor
+ index() -> if string not found , returns the valueEroor
 '''
 from pydoc import replace
 
